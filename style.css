@@ -1,0 +1,530 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff9a9e, #f3a683, #ffdde1);
+  background-size: 400% 400%;
+  animation: bgAnimation 15s ease infinite;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 40vh; /* Full viewport height for vertical centering */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add some padding if needed */
+}
+
+/* Existing styles for .hero-heading and .hero-message */
+.hero-heading {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.hero-message {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  color: #ff9a9e;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Main Call-to-Action Button */
+.cta-button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4c4c;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Button */
+.card-button {
+  background-color: #ff9a9e;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #ff6b6b;
+}
+
+/* Card Section */
+.card-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 10px; /* Adjust padding */
+    height: auto; /* Allow height to adjust */
+  }
+  
+  .hero-heading {
+    font-size: 3rem; /* Larger on larger screens */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .hero-message {
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #555;
+    margin-bottom: 30px;
+  }  
+
+  .card-section {
+    flex-direction: column; /* Stack cards vertically */
+    margin-top: 150px; /* Adjust spacing */
+  }
+
+  .card {
+    max-width: 70%; /* Allow cards to use more width */
+    margin: 0 auto 20px; /* Center the card */
+  }
+
+  .dancing-gifs {
+    position: relative; /* Adjust positioning */
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+    /* transform: none; Remove translate */
+    display: flex; /* Use flexbox for layout */
+    /* flex-wrap: wrap; Allow wrapping of GIFs */
+    justify-content: center; /* Center GIFs */
+    z-index: 10;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  
+  .dancing-gif1,
+  .dancing-gif2,
+  .dancing-gif3,
+  .dancing-gif4,
+  .dancing-gif5,
+  .dancing-gif6,
+  .dancing-gif7,
+  .dancing-gif8, 
+  .dancing-gif9, 
+  .dancing-gif10, 
+  .dancing-gif11, 
+  .dancing-gif12, 
+  .dancing-gif13, 
+  .dancing-gif14, 
+  .dancing-gif15, 
+  .dancing-gif16,
+  .dancing-gif17,
+  .dancing-gif18,
+  .dancing-gif19,
+  .dancing-gif20,
+  .dancing-gif21,
+  .dancing-gif22,
+  .dancing-gif23,
+  .dancing-gif24,
+  .dancing-gif25,
+  .dancing-gif26,
+  .dancing-gif27,
+  .dancing-gif28,
+  .dancing-gif29,
+  .dancing-gif30,
+  .dancing-gif31,
+  .dancing-gif32,
+  .dancing-gif33, 
+  .dancing-gif34,
+  .dancing-gif35, 
+  .dancing-gif36, 
+  .dancing-gif37, 
+  .dancing-gif38,
+  .dancing-gif39,
+  .dancing-gif40,
+  .dancing-gif41,
+  .dancing-gif42,
+  .dancing-gif43, 
+  .dancing-gif44,
+  .dancing-gif45, 
+  .dancing-gif46, 
+  .dancing-gif47, 
+  .dancing-gif48,
+  .dancing-gif49, 
+  .dancing-gif50, 
+  .dancing-gif51, 
+  .dancing-gif52, 
+  .dancing-gif53 {
+    width: 90px !important; /* Adjust GIF size */
+    height: 70px !important; /* Maintain aspect ratio */
+    margin: 10px; /* Spacing around GIFs */
+    opacity: 1; /* Make GIFs visible */
+  }
+
+  .cta-button {
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .card-button {
+    padding: 8px 15px; /* Adjust button size */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+/* Starry background */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 0; /* Behind other content */
+  pointer-events: none;
+}
+
+/* Individual star */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 1.5s infinite ease-in-out;
+  opacity: 0;
+}
+
+/* Twinkling effect */
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.mouse-trail {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.mouse-trail div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 0, 0, 0.8);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes drift {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.confetti-container {
+  position: absolute;
+  bottom: 100%; /* Start from above the visible area */
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none; /* Ignore mouse events */
+  animation: fall 2s ease-out forwards, fade 2s ease-out forwards;
+}
+
+@keyframes fall {
+  to {
+      transform: translateY(100vh); /* Fall down to the bottom */
+  }
+}
+
+@keyframes fade {
+  to {
+      opacity: 0; /* Fade out */
+  }
+}
+
+.dancing-gifs {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: none; /* Initially hidden */
+  pointer-events: none; /* Prevent interaction */
+}
+
+.dancing-gif1,
+.dancing-gif2,
+.dancing-gif3,
+.dancing-gif4,
+.dancing-gif5,
+.dancing-gif6,
+.dancing-gif7,
+.dancing-gif8,
+.dancing-gif9,
+.dancing-gif10,
+.dancing-gif11,
+.dancing-gif12,
+.dancing-gif13,
+.dancing-gif14,
+.dancing-gif15, 
+.dancing-gif16,
+.dancing-gif17,
+.dancing-gif18,
+.dancing-gif19,
+.dancing-gif20,
+.dancing-gif21,
+.dancing-gif22,
+.dancing-gif23,
+.dancing-gif24,
+.dancing-gif25,
+.dancing-gif26,
+.dancing-gif27,
+.dancing-gif28,
+.dancing-gif29,
+.dancing-gif30, 
+.dancing-gif31,
+.dancing-gif32,
+.dancing-gif33, 
+.dancing-gif34,
+.dancing-gif35, 
+.dancing-gif36, 
+.dancing-gif37, 
+.dancing-gif38,
+.dancing-gif39,
+.dancing-gif40,
+.dancing-gif41,
+.dancing-gif42,
+.dancing-gif43, 
+.dancing-gif44,
+.dancing-gif45, 
+.dancing-gif46, 
+.dancing-gif47, 
+.dancing-gif48,
+.dancing-gif49, 
+.dancing-gif50, 
+.dancing-gif51, 
+.dancing-gif52, 
+.dancing-gif53 {
+  margin-top: 30vh;
+  width: 150px; /* Set large width for GIFs */
+  height: auto;
+  position: absolute;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Floating effect */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Floating effect */
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Positioning GIFs individually */
+.dancing-gif1 { top: 10%; left: 5%; }
+.dancing-gif2 { top: 20%; right: 5%; }
+.dancing-gif3 { top: 30%; left: 5%; }
+.dancing-gif4 { top: 40%; right: 5%; }
+.dancing-gif5 { top: 50%; left: 5%; }
+.dancing-gif6 { top: 60%; right: 5%; }
+.dancing-gif7 { top: 70%; left: 5%; }
+.dancing-gif8 { top: 80%; right: 5%; }
+.dancing-gif9 { top: 90%; left: 5%; }
+.dancing-gif10 { top: 100%; right: 5%; }
+.dancing-gif11 { top: 110%; left: 5%; }
+.dancing-gif12 { top: 120%; right: 5%; }
+.dancing-gif13 { top: 130%; left: 5%; }
+.dancing-gif14 { top: 140%; right: 5%; }
+.dancing-gif15 { top: 150%; left: 5%; }
+.dancing-gif16 { top: 160%; right: 5%; }
+.dancing-gif17 { top: 170%; left: 5%; }
+.dancing-gif18 { top: 180%; right: 5%; }
+.dancing-gif19 { top: 190%; left: 5%; }
+.dancing-gif20 { top: 200%; right: 5%; }
+.dancing-gif21 { top: 210%; left: 5%; }
+.dancing-gif22 { top: 220%; right: 5%; }
+.dancing-gif23 { top: 230%; left: 5%; }
+.dancing-gif24 { top: 240%; right: 5%; }
+.dancing-gif25 { top: 250%; left: 5%; }
+.dancing-gif26 { top: 260%; right: 5%; }
+.dancing-gif27 { top: 270%; left: 5%; }
+.dancing-gif28 { top: 280%; right: 5%; }
+.dancing-gif29 { top: 290%; left: 5%; }
+.dancing-gif30 { top: 300%; right: 5%; }
+.dancing-gif31 { top: 310%; left: 5%; }
+.dancing-gif32 { top: 320%; right: 5%; }
+.dancing-gif33 { top: 330%; left: 5%; }
+.dancing-gif34 { top: 340%; right: 5%; }
+.dancing-gif35 { top: 350%; left: 5%; }
+.dancing-gif36 { top: 360%; right: 5%; }
+.dancing-gif37 { top: 370%; left: 5%; }
+.dancing-gif38 { top: 380%; right: 5%; }
+.dancing-gif39 { top: 390%; left: 5%; }
+.dancing-gif40 { top: 400%; right: 5%; }
+.dancing-gif41 { top: 410%; left: 5%; }
+.dancing-gif42 { top: 420%; right: 5%; }
+.dancing-gif43 { top: 430%; left: 5%; }
+.dancing-gif44 { top: 440%; right: 5%; }
+.dancing-gif45 { top: 450%; left: 5%; }
+.dancing-gif46 { top: 460%; right: 5%; }
+.dancing-gif47 { top: 470%; left: 5%; }
+.dancing-gif48 { top: 480%; right: 5%; }
+.dancing-gif49 { top: 490%; left: 5%; }
+.dancing-gif50 { top: 500%; right: 5%; }
+.dancing-gif51 { top: 510%; left: 5%; }
+.dancing-gif52 { top: 520%; right: 5%; }
+.dancing-gif53 { top: 530%; left: 5%; }
+
+/* Styling for individual letters */
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Keyframes for animating the letters */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start lower */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+  }
+}
+
+#bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: rise 10s infinite ease-in-out;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  100% {
+    bottom: 100vh;
+    transform: translateX(200px);
+  }
+}
+
+#fireworksCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with the canvas */
+}
