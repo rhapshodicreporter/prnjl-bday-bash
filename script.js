@@ -281,7 +281,7 @@ function generateGifs() {
         currentIndex = (currentIndex + 1) % gifs.length; // Loop back to the start
         showNextGif(); // Recursively show the next GIF
       }, 500); // Fade out duration
-    }, 2630); // Time each GIF stays visible 
+    }, 2620); // Time each GIF stays visible 
   }
 
     // Start showing the first GIF
