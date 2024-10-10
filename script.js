@@ -45,7 +45,7 @@ class Firework {
 
   explode() {
       this.exploded = true;
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 65; i++) {
           this.particles.push(new Particle(this.x, this.y, this.fireworkColor));
       }
   }
@@ -114,7 +114,7 @@ function createFirework(event) {
 }
 
 // Generate bubbles dynamically
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 45; i++) {
   const bubble = document.createElement('div');
   bubble.classList.add('bubble');
   
@@ -281,7 +281,7 @@ function generateGifs() {
         currentIndex = (currentIndex + 1) % gifs.length; // Loop back to the start
         showNextGif(); // Recursively show the next GIF
       }, 500); // Fade out duration
-    }, 2600); // Time each GIF stays visible 
+    }, 2630); // Time each GIF stays visible 
   }
 
     // Start showing the first GIF
