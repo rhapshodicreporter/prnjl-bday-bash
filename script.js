@@ -168,7 +168,7 @@ let messageInterval = setInterval(showNextMessage, 3000); // Change the interval
 // Function to trigger the confetti
 function triggerConfetti() {
     confetti({
-      particleCount: 150,
+      particleCount: 100,
       spread: 70,
       origin: { y: 0.6 }
     });
@@ -281,7 +281,7 @@ function generateGifs() {
         currentIndex = (currentIndex + 1) % gifs.length; // Loop back to the start
         showNextGif(); // Recursively show the next GIF
       }, 500); // Fade out duration
-    }, 2600); // Time each GIF stays visible 
+    }, 2550); // Time each GIF stays visible 
   }
 
     // Start showing the first GIF
@@ -317,7 +317,7 @@ surpriseButton.addEventListener('click', () => {
 
     fireworksDisplayed = true; // Set the flag to true
     // Create 5 fireworks at random positions
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 6; i++) {
       createFirework({ clientX: Math.random() * canvas.width, clientY: Math.random() * canvas.height });
     }
 });
@@ -366,11 +366,11 @@ function createStars(numberOfStars) {
 
 // Call this function on page load
 window.onload = function() {
-    createStars(200); // Create 200 stars, can adjust the number for more or fewer stars
+    createStars(150); // Create 200 stars, can adjust the number for more or fewer stars
 };  
 
 // Generate particles
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 80; i++) {
   const particle = document.createElement('div');
   particle.classList.add('particle');
   
