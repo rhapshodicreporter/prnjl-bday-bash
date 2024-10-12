@@ -114,7 +114,7 @@ function createFirework(event) {
 }
 
 // Generate bubbles dynamically
-for (let i = 0; i < 45; i++) {
+for (let i = 0; i < 35; i++) {
   const bubble = document.createElement('div');
   bubble.classList.add('bubble');
   
@@ -281,7 +281,7 @@ function generateGifs() {
         currentIndex = (currentIndex + 1) % gifs.length; // Loop back to the start
         showNextGif(); // Recursively show the next GIF
       }, 500); // Fade out duration
-    }, 2620); // Time each GIF stays visible 
+    }, 2600); // Time each GIF stays visible 
   }
 
     // Start showing the first GIF
@@ -317,7 +317,7 @@ surpriseButton.addEventListener('click', () => {
 
     fireworksDisplayed = true; // Set the flag to true
     // Create 5 fireworks at random positions
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
       createFirework({ clientX: Math.random() * canvas.width, clientY: Math.random() * canvas.height });
     }
 });
