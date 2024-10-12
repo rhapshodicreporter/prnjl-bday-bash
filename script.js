@@ -317,9 +317,9 @@ surpriseButton.addEventListener('click', () => {
 
     fireworksDisplayed = true; // Set the flag to true
     // Create 5 fireworks at random positions
-    for (let i = 0; i < 5; i++) {
-      createFirework({ clientX: Math.random() * canvas.width, clientY: Math.random() * canvas.height });
-    }
+    // for (let i = 0; i < 5; i++) {
+    //   createFirework({ clientX: Math.random() * canvas.width, clientY: Math.random() * canvas.height });
+    // }
 });
 
 // Start animation
